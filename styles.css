@@ -11,14 +11,19 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Open Sans", Arial, sans-serif;
-    min-height: 100vh;
-    width: 50vw;
+    height: 100vh;
     background-color: #fafafa;
     color: #262626;
     padding: 3rem;
+   
 }
-
+.container {
+    display: flex;
+}
 img {
     display: block;
     
@@ -32,7 +37,6 @@ img {
    border-radius: 50px; 
    
 }
-
 .profile{ 
     width: 600px;
     display: grid;
@@ -43,24 +47,7 @@ img {
     align-items: center;
 }
 
-.profile-image {
-    grid-column: 1 / 2;
-   
-}
-
-.profile-user-settings {
-      
-}
-
-.profile-stats {
-
-}
-
-.profile-bio {
-
-}
-
-.gallery > * img {
+/*.gallery > * img {
     display: box;
     width: 160px;
     height: 190px;
@@ -70,9 +57,10 @@ img {
     grid-template-columns: repeat(3, 33.3%);
     grid-template-rows: repeat(12, 8.33%);
     grid-gap: 65px 5px;
+    position: absolute;
 } 
 
-.gallery-item-info >* img:hover {
+.gallery-item-info> * img:hover {
     align-items: center;
     color: rgb(10, 10, 10);
     width: 160px;
@@ -87,4 +75,4 @@ img {
     100%{
         opacity: 30%;
     }
-}
+}*/
