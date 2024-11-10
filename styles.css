@@ -26,8 +26,7 @@ img {
 
 .profile-image > img {
    border: 4px solid rgb(2, 65, 2);
-   border-radius: 100%; 
-   
+   border-radius: 100%;  
 }
 
 .profile-info {
@@ -76,3 +75,49 @@ img {
 .profile-bio {
     font-size: 14px;
 }
+
+/* -- Gallery Section-- */
+
+.img.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+
+.gallery-item-info:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.gallery-item-info ul {
+    font-size: 16px;
+    color: white;
+    list-style-type: none;
+}
+
+.gallery-item-info, img.gallery-image {
+    border-radius: 30px;
+    border: 2px sold black;
+}
+
+.gallery-item-info ul li {
+    margin: 8px;
+}
+
