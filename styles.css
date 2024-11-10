@@ -15,55 +15,64 @@ body {
     height: 100vh;
     background-color: #fafafa;
     color: #262626;
-    padding: 3rem;
+    padding: 3rem;   
+}
+
+img {
+    display: block
+}
+
+/* --Profile Styles-- */
+
+.profile-image > img {
+   border: 4px solid rgb(2, 65, 2);
+   border-radius: 100%; 
    
 }
-.container >.gallery {
-   display: grid;
-   grid-template-columns: repeat(3, 33.3%);
-   grid-template-rows: repeat(9, 11.1%);
-   gap: 10px 10px;
-}
-img { 
-    display: block;
 
+.profile-info {
+    padding-top: 75px;
+    font-size: 12px;
 }
-.gallery-item {
-    height: block;
-    overflow: hidden;
-    
+
+.profile button:active {
+    box-shadow: 0 0 4px blue;
 }
-.gallery-item-info {
-    height: block;
-    padding: 6px;
-    background: rgb(56, 56, 55);
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    
+
+.profile-settings-btn {
+    background: slategrey;
+    border-width: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
 }
-.span{ 
+
+.profile-edit-btn {
+    background: slategrey;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 4px 12px;
     font-weight: bold;
 }
 
-.gallery-item:hover{
-    cursor: pointer;
+.profile-stats > *{
+    display: inline-block;
+    margin-left: 10px;
 }
 
-.gallery-item:hover .gallery-item-info{
-    height: 500px;
-    bottom: 240px;
-    background:rgb(56, 56, 55);
-}
-.gallery-item:hover{
-    transform: scale(1.1) rotate(-3reg);
+.profile-stats ul {
+    padding: 10px 0 0;
 }
 
-.profile-image > img {
-   display: block;
-   width: 100px;
-   height: 100px;
-   border: 3px solid rgb(2, 65, 2);
-   border-radius: 50px; 
-   
+.profile-stats ul li {
+    display: inherit;
+}
+
+.profile-stats .profile-stat-count {
+    font-weight: bold;
+}
+
+.profile-bio {
+    font-size: 14px;
 }
